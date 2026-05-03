@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReviewIT.LoginPage"
+             Title="Login Page">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+        <Label
+            Text="Welcome to ReviewIT, Sign in to start your study session today!"
+            FontSize="24"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"/>
+
+        <Entry
+            x:Name="getUser"
+            Placeholder="Username"
+            FontSize="14"/>
+
+        <Entry
+            x:Name="getPass"
+            Placeholder="Password"
+            FontSize="14"/>
+
+        <Button
+            x:Name="loginBtn"
+            Text="Login"
+            FontSize="14"
+            Clicked="onClickLogin"/>
+
+    </VerticalStackLayout>
+</ContentPage>
